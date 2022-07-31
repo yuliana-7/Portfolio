@@ -89,10 +89,10 @@ ORDER BY performance DESC;
  
  
 /*Question 2*/
---VIP customers ranked by revenue
+--VIP customers ranked by profit
 SELECT o.customerNumber, 
        c.contactFirstName, c.contactLastName,
-       SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS revenue
+       SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS profit
   FROM orders o
   JOIN orderdetails od
     ON o.orderNumber = od.orderNumber
@@ -101,12 +101,12 @@ SELECT o.customerNumber,
   JOIN customers c
     ON o.customerNumber = c.customerNumber
  GROUP BY o.customerNumber
- ORDER BY revenue DESC;
+ ORDER BY profit DESC;
   
 -- Less-engaged customers
 SELECT o.customerNumber, 
        c.contactFirstName, c.contactLastName,
-       SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS revenue
+       SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS profit
   FROM orders o
   JOIN orderdetails od
     ON o.orderNumber = od.orderNumber
@@ -115,15 +115,15 @@ SELECT o.customerNumber,
   JOIN customers c
     ON o.customerNumber = c.customerNumber
  GROUP BY o.customerNumber
- ORDER BY revenue;
+ ORDER BY profit;
   
   
 --Customer Lifetime Value 
 WITH 
- customer_revenue AS (
+ customer_profit AS (
   SELECT o.customerNumber, 
          c.contactFirstName, c.contactLastName,
-         SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS revenue
+         SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)) AS profit
     FROM orders o
     JOIN orderdetails od
       ON o.orderNumber = od.orderNumber
@@ -134,5 +134,5 @@ WITH
    GROUP BY o.customerNumber
 )
  
-SELECT AVG(revenue) AS LTV
-  FROM  customer_revenue;
+SELECT AVG(profit) AS LTV
+  FROM  customer_profit;
