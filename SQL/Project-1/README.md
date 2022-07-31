@@ -27,8 +27,18 @@ Finally, I combined the data above to obtain the list of products that should ha
 
 ## Question 2: How should we tailor marketing and communication strategies to customer behaviors?
 
-In this part, I generated the customer ranking based on amount of revenue they brought in, to determine the **VIP customers**.
+In this part, I generated the customer ranking based on the amount of revenue they brought in, to determine the **VIP customers**.
 
 ![VIP customers](https://github.com/yuliana-7/Portfolio/blob/main/SQL/Project-1/Screenshots/VIP-customers.png)
 
 Next, I ranked the data in ascending order to see which **customers** were **engaging less**.
+
+![Less engaged customers](https://github.com/yuliana-7/Portfolio/blob/main/SQL/Project-1/Screenshots/less-engaged-customers.png)
+
+The information in this question can be used to make decisions on organising programmes to increase existing customers' loyalty, as well as ways to attract new customers.
+
+## Question 3: How much can we spend on acquiring new customers?
+
+Here, I calculated **Customer Lifetime Value (LTV)**, which represents the average amount of money a customer generates. It is useful for deciding how much the company should spend on increasing its customer base.
+
+![LTV](https://github.com/yuliana-7/Portfolio/blob/main/SQL/Project-1/Screenshots/lifetime-value.png)
