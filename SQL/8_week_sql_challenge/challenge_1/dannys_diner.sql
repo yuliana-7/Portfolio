@@ -2,6 +2,8 @@
    Case Study Questions
    --------------------*/
 
+/* Note: this case study was done using SQLite */
+
 -- 1. What is the total amount each customer spent at the restaurant?
 
 SELECT s.customer_id, 
