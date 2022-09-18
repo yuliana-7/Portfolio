@@ -8,10 +8,10 @@ Conditions were added to prevent a situation where a clockwise rotation is follo
 
 Notation:
 
-F = Front
-L = Left
-R = Right
-U = Up
-D = Down
-B = Back
-' = anti-clockwise
+* F = Front
+* L = Left
+* R = Right
+* U = Up
+* D = Down
+* B = Back
+* ' = anti-clockwise
