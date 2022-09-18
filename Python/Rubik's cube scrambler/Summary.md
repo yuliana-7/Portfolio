@@ -14,4 +14,4 @@ Notation:
 * U = Up
 * D = Down
 * B = Back
-* ' = anti-clockwise
+* ' = Anti-clockwise
