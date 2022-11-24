@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-#List of way to rotate the cube's faces
+#List of ways to rotate the cube's faces
 turn = ['F', 'L', 'R', 'U', 'D', 'B']
 #Add anti-clockwise rotations to the list
 lastindex = len(turn) - 1
@@ -19,7 +19,7 @@ while len(scramble) < 25:
     #To ensure that the current turn does not undo the previous turn
     elif scramble[-1][0] != i[0]:
         scramble.append(i)
-    #To allow multiple rotations in the same direction
+    #To allow multiple consequent rotations in the same direction
     elif i == scramble[-1]:
         scramble.append(i)
         
