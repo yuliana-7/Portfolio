@@ -1,0 +1,3 @@
+This interactive Power BI dashboard summarises the results of the Data Professional survey run by Alex Freberg. It shows such metrics as satisfaction with salary and work/life balance, important factors when getting a new job as a Data Professional, salary based on the type of job and country, which industries the respondents work in, which roles in data are the most popular, preferred programming languages, how many people entered the data field from other careers and how easy it was to break into data. All visualisations can be filtered by gender, education level and age. 
+
+In case you cannot open .pbix files, I also included a pdf version (without any filters applied). However, the Power BI file is recommended as it has more features and gives a fuller picture.
